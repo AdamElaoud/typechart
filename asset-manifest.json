@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/typechart.help/static/css/main.4b9258fa.css",
-    "main.js": "/typechart.help/static/js/main.fd9b1de5.js",
-    "index.html": "/typechart.help/index.html",
-    "main.4b9258fa.css.map": "/typechart.help/static/css/main.4b9258fa.css.map",
-    "main.fd9b1de5.js.map": "/typechart.help/static/js/main.fd9b1de5.js.map"
+    "main.css": "/typechart/static/css/main.4b9258fa.css",
+    "main.js": "/typechart/static/js/main.fd9b1de5.js",
+    "index.html": "/typechart/index.html",
+    "main.4b9258fa.css.map": "/typechart/static/css/main.4b9258fa.css.map",
+    "main.fd9b1de5.js.map": "/typechart/static/js/main.fd9b1de5.js.map"
   },
   "entrypoints": [
     "static/css/main.4b9258fa.css",
