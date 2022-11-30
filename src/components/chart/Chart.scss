@@ -1,0 +1,161 @@
+@import "../../themes/colors.scss";
+
+.MuiTable-root {
+
+    // horizontal row highlight
+    .MuiTableRow-root:hover {
+        .cell {
+            &.super-effective {
+                background-color: $superEffectiveLight;
+            }
+    
+            &.not-effective {
+                background-color: $notEffectiveLight;
+            }
+    
+            &.immune {
+                background-color: $immuneLight;
+            }
+    
+            &.blank {
+                background-color: $chartCellHighlight;
+            }
+        }
+    }
+
+    .MuiTableCell-root {
+        background-color: $chartBackground;
+        border: none;
+        font-size: 1vw;
+        font-weight: bold;
+        height: 2vw;
+        padding: 0.4rem;
+        text-align: center;
+        width: 2vw;
+
+        @media (max-width: 1024px) {
+            font-size: 1.35vw;
+            height: 2vw;
+            width: 2vw;
+        }
+
+        &.clickable {
+            cursor: pointer;
+        }
+
+        &.normal {
+            background-color: $normal;
+        }
+        
+        &.fire {
+            background-color: $fire;
+        }
+        
+        &.water {
+            background-color: $water;
+        }
+        
+        &.electric {
+            background-color: $electric;
+        }
+        
+        &.grass {
+            background-color: $grass;
+        }
+        
+        &.ice {
+            background-color: $ice;
+        }
+        
+        &.fighting {
+            background-color: $fighting;
+        }
+        
+        &.poison {
+            background-color: $poison;
+        }
+        
+        &.ground {
+            background-color: $ground;
+        }
+        
+        &.flying {
+            background-color: $flying;
+        }
+        
+        &.psychic {
+            background-color: $psychic;
+        }
+        
+        &.bug {
+            background-color: $bug;
+        }
+        
+        &.rock {
+            background-color: $rock;
+        }
+        
+        &.ghost {
+            background-color: $ghost;
+        }
+        
+        &.dragon {
+            background-color: $dragon;
+        }
+        
+        &.dark {
+            background-color: $dark;
+        }
+        
+        &.steel {
+            background-color: $steel;
+        }
+        
+        &.fairy {
+            background-color: $fairy;
+        }
+    }
+
+    .cell {
+        border-left: 1px solid $chartCellBorder;
+        border-bottom: 1px solid $chartCellBorder;        
+
+        &.super-effective {
+            background-color: $superEffective;
+            color: #FFFFFF;
+        }
+
+        &.not-effective {
+            background-color: $notEffective;
+            color: #FFFFFF;
+        }
+
+        &.immune {
+            background-color: $immune;
+            color: #FFFFFF;
+        }
+
+        &.blank {
+            background-color: $chartBackground;
+        }
+
+        // vertical row highlight
+        &.highlighted {
+            &.super-effective {
+                background-color: $superEffectiveLight;
+            }
+    
+            &.not-effective {
+                background-color: $notEffectiveLight;
+            }
+    
+            &.immune {
+                background-color: $immuneLight;
+            }
+    
+            &.blank {
+                background-color: $chartCellHighlight;
+            }
+        }
+    }
+}

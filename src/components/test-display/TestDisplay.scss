@@ -1,0 +1,23 @@
+@import "../../themes/colors.scss";
+
+.test-display {
+    align-items: center;
+    background-color: $chartBackground;
+    border-radius: 1.25rem;
+    display: flex;
+    font-size: 1vw;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+
+    @media (max-width: 1024px) {
+        font-size: 2.5vw;
+    }
+
+    .display {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

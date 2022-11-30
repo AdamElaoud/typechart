@@ -1,0 +1,42 @@
+@import "../../themes/colors.scss";
+
+.site-header {
+    font-size: 2.5rem;
+    height: 18rem;
+    position: relative;
+    top: 0;
+    width: 100%;
+
+    .top {
+        align-items: center;
+        background-color: $pokeballRed;
+        border-bottom: 4px solid $pokeballDarkGray;
+        color: #FFFFFF;
+        display: flex;
+        font-weight: bold;
+        height: 45%;
+        justify-content: center;
+    }
+
+    .pokeball {
+        $pokeballSize: 4rem;
+        background-color: $pokeballDarkGray;
+        border: 0.1rem solid $pokeballDarkGray;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 0.5rem $pokeballDarkGray, inset 0 0 0 1rem $pokeballLightGray;
+        height: $pokeballSize;
+        position: absolute;
+        left: 50%;
+        width: $pokeballSize;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .bottom {
+        align-items: center;
+        background: transparent;
+        border-top: 4px solid $pokeballDarkGray;
+        display: flex;
+        height: 55%;
+        justify-content: center;
+    }
+}

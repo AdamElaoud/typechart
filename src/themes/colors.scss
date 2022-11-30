@@ -1,0 +1,110 @@
+$normal: #A8A878;
+$normalLight: #C6C6A7;
+$normalDark: #6D6D4E;
+
+$fire: #F08030;
+$fireLight: #F5AC78;
+$fireDark: #9C531F;
+
+$water: #6890F0;
+$waterLight: #9DB7F5;
+$waterDark: #445E9C;
+
+$electric: #F8D030;
+$electricLight: #FAE078;
+$electricDark: #A1871F;
+
+$grass: #78C850;
+$grassLight: #A7DB8D;
+$grassDark: #4E8234;
+
+$ice: #98D8D8;
+$iceLight: #BCE6E6;
+$iceDark: #638D8D;
+
+$fighting: #C03028;
+$fightingLight: #D67873;
+$fightingDark: #7D1F1A;
+
+$poison: #A040A0;
+$poisonLight: #C183C1;
+$poisonDark: #682A68;
+
+$ground: #E0C068;
+$groundLight: #EBD69D;
+$groundDark: #927D44;
+
+$flying: #A890F0;
+$flyingLight: #C6B7F5;
+$flyingDark: #6D5E9C;
+
+$psychic: #F85888;
+$psychicLight: #FA92B2;
+$psychicDark: #A13959;
+
+$bug: #A8B820;
+$bugLight: #C6D16E;
+$bugDark: #6D7815;
+
+$rock: #B8A038;
+$rockLight: #D1C17D;
+$rockDark: #786824;
+
+$ghost: #705898;
+$ghostLight: #A292BC;
+$ghostDark: #493963;
+
+$dragon: #7038F8;
+$dragonLight: #A27DFA;
+$dragonDark: #4924A1;
+
+$dark: #705848;
+$darkLight: #A29288;
+$darkDark: #49392F;
+
+$steel: #B8B8D0;
+$steelLight: #D1D1E0;
+$steelDark: #787887;
+
+$fairy: #EE99AC;
+$fairyLight: #F4BDC9;
+$fairyDark: #9B6470;
+
+$pokeballRed: #c34f1d;
+$pokeballLightGray: #818285;
+$pokeballDarkGray: #414c55;
+$pokeballLightBrown: #cdb68d;
+$pokeballDarkBrown: #9c7e48;
+
+$pokeballBackground: repeating-linear-gradient(
+    -45deg,
+    $pokeballDarkBrown,
+    $pokeballDarkBrown 0.15rem,
+    $pokeballLightBrown 0.15rem,
+    $pokeballLightBrown 15rem
+);
+
+$pokeballBackgroundMobile: repeating-linear-gradient(
+    -45deg,
+    $pokeballDarkBrown,
+    $pokeballDarkBrown 0.15rem,
+    $pokeballLightBrown 0.15rem,
+    $pokeballLightBrown 10rem
+);
+
+$superEffective: #4e9a06;
+$superEffectiveLight: #71ae37;
+
+$notEffective: #a50000;
+$notEffectiveLight: #b73232;
+
+$immune: #2e3336;
+$immuneLight: #575b5e;
+
+$chartBackground: #f7e7cb;
+$chartCellBorder: #e7d6ba;
+$chartCellHighlight: #e7d6ba;
+
+$buttonBackground: $chartBackground;
+$buttonDisabledBackground: #d1c4ad;
+$buttonDisabledColor: #b2a794;

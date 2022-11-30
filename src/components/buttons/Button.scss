@@ -1,0 +1,37 @@
+@import "../../themes/colors.scss";
+
+.button {
+    background-color: $buttonBackground;
+    border: none;
+    border-radius: 1.25rem;
+    font-size: 1vw;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+
+    $mobileBorder: 2px solid $pokeballDarkGray;
+
+    @media (max-width: 1024px) {
+        font-size: 2.5vw;
+    }
+
+    &:hover {
+        background-color: $pokeballDarkGray;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background-color: $buttonDisabledBackground;
+        color: $buttonDisabledColor;
+        cursor: auto;
+    }
+
+    &.active {
+        background-color: $pokeballRed;
+
+        &:hover {
+            background-color: $pokeballRed;
+            color: #000000;
+        }
+    }
+}

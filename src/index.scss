@@ -1,3 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: "Manrope", "Trebuchet MS", sans-serif !important;
+}
+
+html {
+    font-size: 10px; // sets 1 rem = 10px instead of 16px
+    // cursor: url();
+    
+    body {
+        margin: 0;
+    }
 }

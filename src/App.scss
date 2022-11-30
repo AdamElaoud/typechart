@@ -1,0 +1,14 @@
+@import "./themes/colors.scss";
+
+.app {
+    align-items: center;
+    background: $pokeballBackground;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+    @media (max-width: 575px) {
+        background: $pokeballBackgroundMobile;
+    }
+}
