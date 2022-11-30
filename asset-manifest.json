@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/typechart.help/static/css/main.4b9258fa.css",
+    "main.js": "/typechart.help/static/js/main.fd9b1de5.js",
+    "index.html": "/typechart.help/index.html",
+    "main.4b9258fa.css.map": "/typechart.help/static/css/main.4b9258fa.css.map",
+    "main.fd9b1de5.js.map": "/typechart.help/static/js/main.fd9b1de5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b9258fa.css",
+    "static/js/main.fd9b1de5.js"
+  ]
+}
