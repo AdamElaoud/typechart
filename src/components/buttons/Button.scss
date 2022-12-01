@@ -14,6 +14,10 @@
         font-size: 2.5vw;
     }
 
+    @media (max-width: 500px) {
+        font-size: 3.25vw;
+    }
+
     &:hover {
         background-color: $pokeballDarkGray;
         color: #FFFFFF;

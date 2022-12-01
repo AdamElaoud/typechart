@@ -29,8 +29,8 @@ function buildTableRow(tableRowData) {
                     label = {true}
                     data = {value}
                     key = {key}
-                    className = {`${cell}-col ${value.toLowerCase()}`}
-                    size = "small">{cellContent}
+                    className = {`${cell}-col ${value.toLowerCase()}`}>
+                        {cellContent}
                 </ChartCell>
             ];
         }
@@ -42,8 +42,8 @@ function buildTableRow(tableRowData) {
                 col = {`${cell}-col`}
                 data = {value}
                 key = {key}
-                className = {`${cell}-col cell clickable`}
-                size = "small">{cellContent}
+                className = {`${cell}-col cell clickable`}>
+                    {cellContent}
             </ChartCell>
         ];
 

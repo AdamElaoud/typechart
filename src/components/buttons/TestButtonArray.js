@@ -4,18 +4,27 @@ import { fullTypeChart } from "../../util/typeChart";
 import "./TestButtonArray.scss";
 
 export default function TestButtonArray() {
-    const { chart, setShowChart, showChart, setCountCorrect, countCorrect, maxCorrect, setTesting, testing } = useChartContext();
-
-    const toggleShowChartText = showChart ? "Hide Solution" : "Show Solution";
-    const toggleTestText = testing ? "Stop Test" : "Test Yourself";
-
+    const { chart, setChart, setShowChart, showChart, setCountCorrect, countCorrect, maxCorrect, setTesting, testing } = useChartContext();
+    
     const isFullTypeChart = chart === fullTypeChart;
     const testComplete = countCorrect === maxCorrect;
 
+    const toggleShowChartText = showChart ? "Hide Solution" : "Show Solution";
+    const toggleTestText = testing ? testComplete ? "Start New Test" : "Stop Test" : "Test Yourself";
+
     const toggleTest = () => {
         if (!isFullTypeChart) {
-            setShowChart(prevShowChart => !prevShowChart);
-            setTesting(prevTesting => !prevTesting);
+            // is starting new test
+            if (testComplete) {
+                setChart(prevChart => prevChart);
+                setShowChart(false);
+
+            // if toggling test mode
+            } else {
+                setShowChart(prevShowChart => !prevShowChart);
+                setTesting(prevTesting => !prevTesting);
+            }
+
             setCountCorrect(0);
         }
     };

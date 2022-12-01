@@ -16,6 +16,10 @@
         font-size: 2.5vw;
     }
 
+    @media (max-width: 500px) {
+        font-size: 3.25vw;
+    }
+
     .display {
         padding-left: 2rem;
         padding-right: 2rem;

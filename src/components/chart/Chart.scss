@@ -1,6 +1,8 @@
 @import "../../themes/colors.scss";
 
 .MuiTable-root {
+    letter-spacing: normal;
+    line-height: 1.5;
 
     // horizontal row highlight
     .MuiTableRow-root:hover {
@@ -18,17 +20,19 @@
             }
     
             &.blank {
-                background-color: $chartCellHighlight;
+                background-color: $chartCellHighlightLight;
             }
         }
     }
 
     .MuiTableCell-root {
         background-color: $chartBackground;
-        border: none;
+        border: 2px solid transparent;
         font-size: 1vw;
         font-weight: bold;
         height: 2vw;
+        letter-spacing: normal;
+        line-height: 1.5;
         padding: 0.4rem;
         text-align: center;
         width: 2vw;
@@ -117,8 +121,8 @@
     }
 
     .cell {
-        border-left: 1px solid $chartCellBorder;
-        border-bottom: 1px solid $chartCellBorder;        
+        border: 2px solid $chartCellBorder;
+        border-spacing: 2px;
 
         &.super-effective {
             background-color: $superEffective;
@@ -154,8 +158,13 @@
             }
     
             &.blank {
-                background-color: $chartCellHighlight;
+                background-color: $chartCellHighlightLight;
             }
+        }
+        
+        &:hover {
+            background-color: $chartCellHighlightDark;
+            border: 2px solid $pokeballDarkBrown;
         }
     }
 }

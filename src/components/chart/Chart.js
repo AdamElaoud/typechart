@@ -12,30 +12,35 @@ export default function Chart() {
 
     const tableBodyData = getTableBodyData(chart);
 
+    const chartStyles = {
+        borderCollapse: "separate",
+        width: "50%"
+    }
+
     return (
-        <Table sx = {{ width: "50%" }} size = "small">
+        <Table sx = {chartStyles}>
             <TableHead>
                 {tableHeadData.map((row) => (
                     <TableRow key = "head">
-                        <TableCell size = "small">{row.type}</TableCell>
-                        <TableCell className = "normal" size = "small">{row.nor}</TableCell>
-                        <TableCell className = "fire" size = "small">{row.fir}</TableCell>
-                        <TableCell className = "water" size = "small">{row.wat}</TableCell>
-                        <TableCell className = "electric" size = "small">{row.ele}</TableCell>
-                        <TableCell className = "grass" size = "small">{row.gra}</TableCell>
-                        <TableCell className = "ice" size = "small">{row.ice}</TableCell>
-                        <TableCell className = "fighting" size = "small">{row.fig}</TableCell>
-                        <TableCell className = "poison" size = "small">{row.poi}</TableCell>
-                        <TableCell className = "ground" size = "small">{row.gro}</TableCell>
-                        <TableCell className = "flying" size = "small">{row.fly}</TableCell>
-                        <TableCell className = "psychic" size = "small">{row.psy}</TableCell>
-                        <TableCell className = "bug" size = "small">{row.bug}</TableCell>
-                        <TableCell className = "rock" size = "small">{row.roc}</TableCell>
-                        <TableCell className = "ghost" size = "small">{row.gho}</TableCell>
-                        <TableCell className = "dragon" size = "small">{row.dra}</TableCell>
-                        <TableCell className = "dark" size = "small">{row.dar}</TableCell>
-                        <TableCell className = "steel" size = "small">{row.ste}</TableCell>
-                        <TableCell className = "fairy" size = "small">{row.fai}</TableCell>
+                        <TableCell>{row.type}</TableCell>
+                        <TableCell className = "normal">{row.nor}</TableCell>
+                        <TableCell className = "fire">{row.fir}</TableCell>
+                        <TableCell className = "water">{row.wat}</TableCell>
+                        <TableCell className = "electric">{row.ele}</TableCell>
+                        <TableCell className = "grass">{row.gra}</TableCell>
+                        <TableCell className = "ice">{row.ice}</TableCell>
+                        <TableCell className = "fighting">{row.fig}</TableCell>
+                        <TableCell className = "poison">{row.poi}</TableCell>
+                        <TableCell className = "ground">{row.gro}</TableCell>
+                        <TableCell className = "flying">{row.fly}</TableCell>
+                        <TableCell className = "psychic">{row.psy}</TableCell>
+                        <TableCell className = "bug">{row.bug}</TableCell>
+                        <TableCell className = "rock">{row.roc}</TableCell>
+                        <TableCell className = "ghost">{row.gho}</TableCell>
+                        <TableCell className = "dragon">{row.dra}</TableCell>
+                        <TableCell className = "dark">{row.dar}</TableCell>
+                        <TableCell className = "steel">{row.ste}</TableCell>
+                        <TableCell className = "fairy">{row.fai}</TableCell>
                     </TableRow>
                 ))}
             </TableHead>
