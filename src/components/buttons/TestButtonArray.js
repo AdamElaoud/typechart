@@ -4,7 +4,7 @@ import { fullTypeChart } from "../../util/typeChart";
 import "./TestButtonArray.scss";
 
 export default function TestButtonArray() {
-    const { chart, setChart, setShowChart, showChart, setCountCorrect, countCorrect, maxCorrect, setTesting, testing } = useChartContext();
+    const { chart, setChart, setShowChart, showChart, setCountCorrect, countCorrect, setCountIncorrect, maxCorrect, setTesting, testing } = useChartContext();
     
     const isFullTypeChart = chart === fullTypeChart;
     const testComplete = countCorrect === maxCorrect;
@@ -26,6 +26,7 @@ export default function TestButtonArray() {
             }
 
             setCountCorrect(0);
+            setCountIncorrect(0);
         }
     };
 
