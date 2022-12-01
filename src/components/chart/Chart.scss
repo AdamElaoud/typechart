@@ -27,13 +27,13 @@
 
     .MuiTableCell-root {
         background-color: $chartBackground;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         font-size: 1vw;
         font-weight: bold;
         height: 2vw;
         letter-spacing: normal;
         line-height: 1.5;
-        padding: 0.4rem;
+        padding: 0.3rem;
         text-align: center;
         width: 2vw;
 
@@ -121,7 +121,7 @@
     }
 
     .cell {
-        border: 2px solid $chartCellBorder;
+        border: 1px solid $chartCellBorder;
         border-spacing: 2px;
 
         &.super-effective {
@@ -164,7 +164,7 @@
         
         &:hover {
             background-color: $chartCellHighlightDark;
-            border: 2px solid $pokeballDarkBrown;
+            border: 1px solid $pokeballDarkBrown;
         }
     }
 }
