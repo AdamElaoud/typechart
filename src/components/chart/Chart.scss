@@ -27,17 +27,18 @@
 
     .MuiTableCell-root {
         background-color: $chartBackground;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         font-size: 1vw;
         font-weight: bold;
         height: 2vw;
         letter-spacing: normal;
         line-height: 1.5;
-        padding: 0.3rem;
+        padding: 0.2rem;
         text-align: center;
         width: 2vw;
 
         @media (max-width: 1024px) {
+            border: 1px solid transparent;
             font-size: 1.35vw;
             height: 2vw;
             width: 2vw;
@@ -121,8 +122,12 @@
     }
 
     .cell {
-        border: 1px solid $chartCellBorder;
+        border: 2px solid $chartCellBorder;
         border-spacing: 2px;
+
+        @media (max-width: 1024px) {
+            border: 1px solid $chartCellBorder;
+        }
 
         &.super-effective {
             background-color: $superEffective;
@@ -164,7 +169,11 @@
         
         &:hover {
             background-color: $chartCellHighlightDark;
-            border: 1px solid $pokeballDarkBrown;
+            border: 2px solid $pokeballDarkBrown;
+
+            @media (max-width: 1024px) {
+                border: 1px solid $pokeballDarkBrown;
+            }
         }
     }
 }
