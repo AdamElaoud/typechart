@@ -1,9 +1,9 @@
 import { Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
+import { useChartContext } from "../ChartContext";
 import { buildTableBody, createData } from "./TableFactory";
 import { typeChartHeader } from "../../util/typeChart";
-import "../../themes/types.scss";
 import "./Chart.scss";
-import { useChartContext } from "../ChartContext";
+import "../../themes/types.scss";
 
 const tableHeadData = [ createData(typeChartHeader) ];
 
@@ -22,7 +22,7 @@ export default function Chart() {
             <TableHead>
                 {tableHeadData.map((row) => (
                     <TableRow key = "head">
-                        <TableCell>{row.type}</TableCell>
+                        <TableCell className = "label">{row.type}</TableCell>
                         <TableCell className = "normal">{row.nor}</TableCell>
                         <TableCell className = "fire">{row.fir}</TableCell>
                         <TableCell className = "water">{row.wat}</TableCell>

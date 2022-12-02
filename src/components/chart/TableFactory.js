@@ -1,4 +1,4 @@
-import { TableCell, TableRow } from "@mui/material";
+import { TableRow } from "@mui/material";
 import ChartCell from "./ChartCell";
 
 export function createData([type, nor, fir, wat, ele, gra, ice, fig, poi, gro, fly, psy, bug, roc, gho, dra, dar, ste, fai]) {

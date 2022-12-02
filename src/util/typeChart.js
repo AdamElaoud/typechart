@@ -1,4 +1,4 @@
-export const typeChartHeader = [ "TYPE", "NOR", "FIR", "WAT", "ELE", "GRA", "ICE", "FIG", "POI", "GRO", "FLY", "PSY", "BUG", "ROC", "GHO", "DRA", "DAR", "STE", "FAI" ];
+export const typeChartHeader = [ "DEFENSE →\nATTACK ↴", "NOR", "FIR", "WAT", "ELE", "GRA", "ICE", "FIG", "POI", "GRO", "FLY", "PSY", "BUG", "ROC", "GHO", "DRA", "DAR", "STE", "FAI" ];
 
 export const fullTypeChart = [
     [ "NORMAL", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "½", "0", "1", "1", "½", "1" ],
